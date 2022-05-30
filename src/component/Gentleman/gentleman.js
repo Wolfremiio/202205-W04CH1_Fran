@@ -1,3 +1,6 @@
+import { Button } from '../Button/button';
+import { buttonX } from '../Button/buttonX';
+
 export function Gentleman({ gentleman }) {
   return (
     <>
@@ -27,8 +30,8 @@ export function Gentleman({ gentleman }) {
             </li>
           </ul>
         </div>
-        <i className="icon gentleman__icon fas fa-check"></i>
-        <i className="icon gentleman__icon gentleman__icon--delete fas fa-times"></i>
+        <buttonX></buttonX>
+        <button id={gentleman.id}></button>
       </li>
       ;
     </>
